@@ -118,29 +118,29 @@
   'ctrl-m': 'vim-mode-plus:mini-scroll-down'
   'ctrl-v': 'vim-mode-plus:mini-scroll-up'
 
-  'G': 'vim-mode-plus:move-to-last-line'
-  'g g': 'vim-mode-plus:move-to-first-line'
-  'H': 'vim-mode-plus:move-to-top-of-screen'
-  'L': 'vim-mode-plus:move-to-bottom-of-screen'
-  'M': 'vim-mode-plus:move-to-middle-of-screen'
+  'L': 'vim-mode-plus:move-to-last-line'
+  'l l': 'vim-mode-plus:move-to-first-line'
+  'N': 'vim-mode-plus:move-to-top-of-screen'
+  'B': 'vim-mode-plus:move-to-bottom-of-screen'
+  'Q': 'vim-mode-plus:move-to-middle-of-screen'
 
   # Operator
   # -------------------------
-  'd': 'vim-mode-plus:delete'
-  'c': 'vim-mode-plus:change'
-  's': 'vim-mode-plus:substitute'
-  'x': 'vim-mode-plus:delete-right' # to avoid `d x` is treated as `d d`
+  'a': 'vim-mode-plus:delete'
+  'k': 'vim-mode-plus:change'
+  'r': 'vim-mode-plus:substitute'
+  'w': 'vim-mode-plus:delete-right' # to avoid `d x` is treated as `d d`
 
-  'D': 'vim-mode-plus:delete-to-last-character-of-line'
-  'C': 'vim-mode-plus:change-to-last-character-of-line'
-  'S': 'vim-mode-plus:substitute-line'
-  'Y': 'vim-mode-plus:yank-line'
+  'A': 'vim-mode-plus:delete-to-last-character-of-line'
+  'K': 'vim-mode-plus:change-to-last-character-of-line'
+  'R': 'vim-mode-plus:substitute-line'
+  'V': 'vim-mode-plus:yank-line'
 
-  'r': 'vim-mode-plus:replace'
-  'g o': 'vim-mode-plus:toggle-preset-occurrence'
-  'g O': 'vim-mode-plus:toggle-preset-subword-occurrence'
-  'g .': 'vim-mode-plus:add-preset-occurrence-from-last-occurrence-pattern'
-
+  'h': 'vim-mode-plus:replace'
+  'l f': 'vim-mode-plus:toggle-preset-occurrence'
+  'l O': 'vim-mode-plus:toggle-preset-subword-occurrence'
+  'l .': 'vim-mode-plus:add-preset-occurrence-from-last-occurrence-pattern'
+#end of changes
   # '_': 'vim-mode-plus:replace-with-register'
   'g I': 'vim-mode-plus:insert-at-beginning-of-line'
   '>': 'vim-mode-plus:indent'
