@@ -30,29 +30,29 @@
 # insert
 # -------------------------
 'atom-text-editor.vim-mode-plus.insert-mode':
-  'ctrl-w': 'editor:delete-to-beginning-of-word'
-  'ctrl-u': 'editor:delete-to-beginning-of-line'
-  'ctrl-y': 'vim-mode-plus:copy-from-line-above'
+  'ctrl-d': 'editor:delete-to-beginning-of-word'
+  'ctrl-g': 'editor:delete-to-beginning-of-line'
+  'ctrl-v': 'vim-mode-plus:copy-from-line-above'
   # disabled for compatibility with the common binding for going to the end of the line
   # 'ctrl-e': 'vim-mode-plus:copy-from-line-below'
   # 'ctrl-a': 'vim-mode-plus:insert-last-inserted'
-  'ctrl-r': 'vim-mode-plus:insert-register'
-  'ctrl-o': 'vim-mode-plus:activate-normal-mode-once'
+  'ctrl-h': 'vim-mode-plus:insert-register'
+  'ctrl-f': 'vim-mode-plus:activate-normal-mode-once'
 
 # except insert
 # -------------------------
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # Motions
   # -------------------------
-  'h': 'vim-mode-plus:move-left'
+  'n': 'vim-mode-plus:move-left'
   'left': 'vim-mode-plus:move-left'
   'backspace': 'core:move-left'
-  'l': 'vim-mode-plus:move-right'
+  'b': 'vim-mode-plus:move-right'
   'space': 'vim-mode-plus:move-right'
   'right': 'vim-mode-plus:move-right'
 
-  'k': 'vim-mode-plus:move-up'
-  'j': 'vim-mode-plus:move-down'
+  's': 'vim-mode-plus:move-up'
+  'o': 'vim-mode-plus:move-down'
 
   # 'k': 'vim-mode-plus:move-up-wrap'
   # 'j': 'vim-mode-plus:move-down-wrap'
@@ -60,20 +60,20 @@
   'up': 'vim-mode-plus:move-up'
   'down': 'vim-mode-plus:move-down'
 
-  'g k': 'vim-mode-plus:move-up-screen'
-  'g j': 'vim-mode-plus:move-down-screen'
+  'l s': 'vim-mode-plus:move-up-screen'
+  'l o': 'vim-mode-plus:move-down-screen'
 
-  'w': 'vim-mode-plus:move-to-next-word'
+  'd': 'vim-mode-plus:move-to-next-word'
   # 'w':     'vim-mode-plus:move-to-next-alphanumeric-word'
-  'W': 'vim-mode-plus:move-to-next-whole-word'
-  'e': 'vim-mode-plus:move-to-end-of-word'
+  'D': 'vim-mode-plus:move-to-next-whole-word'
+  'm': 'vim-mode-plus:move-to-end-of-word'
   # 'e': 'vim-mode-plus:move-to-end-of-alphanumeric-word'
-  'g e': 'vim-mode-plus:move-to-previous-end-of-word'
-  'E': 'vim-mode-plus:move-to-end-of-whole-word'
-  'g E': 'vim-mode-plus:move-to-previous-end-of-whole-word'
-  'b': 'vim-mode-plus:move-to-previous-word'
+  'l m': 'vim-mode-plus:move-to-previous-end-of-word'
+  'M': 'vim-mode-plus:move-to-end-of-whole-word'
+  'l M': 'vim-mode-plus:move-to-previous-end-of-whole-word'
+  'j': 'vim-mode-plus:move-to-previous-word'
   # 'b':     'vim-mode-plus:move-to-previous-alphanumeric-word'
-  'B': 'vim-mode-plus:move-to-previous-whole-word'
+  'J': 'vim-mode-plus:move-to-previous-whole-word'
 
   # 'q': 'vim-mode-plus:move-to-next-subword'
   # 'Q': 'vim-mode-plus:move-to-previous-subword'
@@ -95,28 +95,28 @@
   '_': 'vim-mode-plus:move-to-first-character-of-line-and-down'
   '$': 'vim-mode-plus:move-to-last-character-of-line'
   'end': 'vim-mode-plus:move-to-last-character-of-line'
-  'g _': 'vim-mode-plus:move-to-last-nonblank-character-of-line-and-down'
+  'l _': 'vim-mode-plus:move-to-last-nonblank-character-of-line-and-down'
   '-': 'vim-mode-plus:move-to-first-character-of-line-up'
   '+': 'vim-mode-plus:move-to-first-character-of-line-down'
   'enter': 'vim-mode-plus:move-to-first-character-of-line-down'
 
-  'g 0': 'vim-mode-plus:move-to-beginning-of-screen-line'
-  'g ^': 'vim-mode-plus:move-to-first-character-of-screen-line'
-  'g $': 'vim-mode-plus:move-to-last-character-of-screen-line'
-  'g altgraph $': 'vim-mode-plus:move-to-last-character-of-screen-line'
+  'l 0': 'vim-mode-plus:move-to-beginning-of-screen-line'
+  'l ^': 'vim-mode-plus:move-to-first-character-of-screen-line'
+  'l $': 'vim-mode-plus:move-to-last-character-of-screen-line'
+  'l altgraph $': 'vim-mode-plus:move-to-last-character-of-screen-line'
 
   # scroll
-  'ctrl-f': 'vim-mode-plus:scroll-full-screen-down'
-  'ctrl-b': 'vim-mode-plus:scroll-full-screen-up'
+  'ctrl-e': 'vim-mode-plus:scroll-full-screen-down'
+  'ctrl-j': 'vim-mode-plus:scroll-full-screen-up'
 
-  'ctrl-d': 'vim-mode-plus:scroll-half-screen-down'
-  'ctrl-u': 'vim-mode-plus:scroll-half-screen-up'
+  'ctrl-a': 'vim-mode-plus:scroll-half-screen-down'
+  'ctrl-g': 'vim-mode-plus:scroll-half-screen-up'
 
-  'g ctrl-d': 'vim-mode-plus:scroll-quarter-screen-down'
-  'g ctrl-u': 'vim-mode-plus:scroll-quarter-screen-up'
+  'l ctrl-d': 'vim-mode-plus:scroll-quarter-screen-down'
+  'l ctrl-g': 'vim-mode-plus:scroll-quarter-screen-up'
 
-  'ctrl-e': 'vim-mode-plus:mini-scroll-down'
-  'ctrl-y': 'vim-mode-plus:mini-scroll-up'
+  'ctrl-m': 'vim-mode-plus:mini-scroll-down'
+  'ctrl-v': 'vim-mode-plus:mini-scroll-up'
 
   'G': 'vim-mode-plus:move-to-last-line'
   'g g': 'vim-mode-plus:move-to-first-line'
